@@ -1,87 +1,85 @@
-# Welcome to React Router!
+ RESUMIND — AI Resume Analyzer
+RESUMIND is an AI-powered resume analysis tool built with React.js and TypeScript that helps job seekers optimize their resumes for ATS (Applicant Tracking Systems). Simply upload your resume in PDF format, enter the job details, and get instant intelligent feedback tailored to the role you're applying for — all powered by Puter.js built-in AI.
+🌐 Website
+Feel free to test the application here:
+Visit RESUMIND
 
-A modern, production-ready template for building full-stack React applications using React Router.
+✨ Features
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+🔐 Secure authentication powered by Puter.js
+📄 PDF resume upload with internal PDF-to-image conversion
+🏢 Job-specific analysis using company name, role & job description
+🤖 AI-powered keyword matching and ATS score generation
+⚠️ Concern points highlighting weak or missing resume sections
+🛠️ Detailed issue detection for skills, phrasing & formatting problems
+⚡ Instant real-time feedback with a clean readable breakdown
+📱 Fully responsive modern UI
 
-## Features
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+🛠 Technologies
+Frontend
 
-## Getting Started
+React.js
+TypeScript
+Tailwind CSS
 
-### Installation
+AI & Services
 
-Install the dependencies:
+Puter.js (Authentication + Built-in AI)
+PDF-to-Image Conversion
+ATS Keyword Matching Engine
 
-```bash
+Tools
+
+Git & GitHub
+Vercel (Deployment)
+
+
+⚙️ Local Development
+To run RESUMIND locally for development, follow these steps:
+Clone the Repository
+git clone https://github.com/chartak26/RESUMIND.git
+⚛️ Frontend Setup
+
+Open the project directory:
+
+cd RESUMIND
+
+Install dependencies:
+
 npm install
-```
 
-### Development
+Start the development server:
 
-Start the development server with HMR:
-
-```bash
 npm run dev
-```
+The frontend server will start on:
+http://localhost:5173
 
-Your application will be available at `http://localhost:5173`.
+🔧 How It Works
 
-## Building for Production
+Login — Authenticate securely using your Puter.js account
+Enter Job Details — Input the company name, target role and full job description
+Upload Resume — Upload your resume in PDF format
+AI Analysis — RESUMIND internally converts your PDF to an image and runs AI-powered keyword analysis against the job description
+Get Results — Receive your ATS compatibility score, highlighted concern points, and a detailed list of issues to fix
 
-Create a production build:
 
-```bash
-npm run build
-```
+📝 Note
 
-## Deployment
+Make sure you have a valid Puter.js account to log in and use the AI analysis features
+For best results, upload a clean single or multi-page PDF resume without heavy graphics or tables
+The more detailed your job description input, the more accurate and relevant your ATS feedback will be
 
-### Docker Deployment
 
-To build and run using Docker:
+🔑 Environment Variables
+To run this project locally, create a .env file in the root directory and add the following:
+VITE_PUTER_APP_ID=your_puter_app_id
 
-```bash
-docker build -t my-app .
+🤝 Contributing
+Contributions, issues and feature requests are welcome!
+Feel free to check the issues page or submit a pull request.
 
-# Run the container
-docker run -p 3000:3000 my-app
-```
+ 
 
-The containerized application can be deployed to any platform that supports Docker, including:
 
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+Built with ❤️ by Sarthak Pal
